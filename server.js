@@ -7,7 +7,7 @@ const cors = require("cors");
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 10000
 app.use(cors({ origin: "https://useless-projectfront.onrender.com" }));
 app.use(express.json());
 
@@ -167,6 +167,6 @@ app.post("/api/generate", async (req, res) => {
   }
 });
 
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT,'0.0.0.0', () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
