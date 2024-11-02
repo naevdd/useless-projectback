@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 const PORT = 5000;
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://useless-projectfront.onrender.com" }));
 app.use(express.json());
 
 const gemini_api_key = process.env.API_KEY;
